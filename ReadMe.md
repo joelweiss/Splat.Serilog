@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/ber0ecdu6d4l3dr6?svg=true)](https://ci.appveyor.com/project/joelweiss/splat-serilog)
+
 #Splat.Serilog
 
 Use [Serilog](http://serilog.net/) as you [Splat](https://github.com/paulcbetts/splat) logger.
