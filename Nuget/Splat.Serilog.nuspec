@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+    <metadata>
+        <id>Splat.Serilog</id>
+        <version>1.0.0.0-Beta</version>
+        <authors>Joel Weiss</authors>
+        <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+        <projectUrl>https://github.com/joelweiss/Splat.Serilog</projectUrl>
+        <iconUrl>http://serilog.net/images/serilog-community-nuget.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Serilog Integration for Splat.</description>
+        <language>en-US</language>
+        <tags>serilog logging splat</tags>
+        <dependencies>
+            <dependency id="Serilog" version="1.5.7" />
+            <dependency id="Splat" version="6.1.3" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="..\Source\Splat.Serilog\bin\Release\Splat.Serilog.dll" target="lib\net45\Splat.Serilog.dll" />
+    </files>
+</package>
