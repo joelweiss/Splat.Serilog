@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
-
     <AssemblyName>Splat.Serilog</AssemblyName>
     <RootNamespace>Splat.Serilog</RootNamespace>
     <Version>2.0.0</Version>
@@ -16,14 +15,18 @@
     <PackageTags>serilog logging splat</PackageTags>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <DebugType>embedded</DebugType>
     <PackageIconUrl>http://serilog.net/images/serilog-community-nuget.png</PackageIconUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <DebugType>embedded</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="serilog" Version="2.7.1" />
     <PackageReference Include="splat" Version="4.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-62925-02" PrivateAssets="All" />
   </ItemGroup>
 
 </Project>
