@@ -11,7 +11,8 @@
         /// <param name="logger">The Serilog logger.</param>
         public static void Register(global::Serilog.ILogger logger)
         {
-            Splat.Locator.CurrentMutable.RegisterConstant(new SerilogLogger(logger), typeof(Splat.ILogger));
+            var logManager = new FuncLogManager(t => new SerilogLogger(logger.ForContext(t)));
+            Splat.Locator.CurrentMutable.RegisterConstant(logManager, typeof(Splat.ILogManager));
         }
     }
 }

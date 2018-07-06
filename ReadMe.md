@@ -11,5 +11,5 @@ PM> Install-Package Splat.Serilog
 ```
 # Setup
 ```csharp
-Splat.Serilog.Registration.Register(_Logger.ForContext<Splat.ILogger>());
+Splat.Serilog.Registration.Register(_Logger);
 ```
