@@ -2,6 +2,23 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
+
+    <AssemblyName>Splat.Serilog</AssemblyName>
+    <RootNamespace>Splat.Serilog</RootNamespace>
+    <Version>2.0.0</Version>
+    <Authors>Joel Weiss</Authors>
+    <Company />
+    <Product>Change Tracking</Product>
+    <Description>Serilog Integration for Splat.</Description>
+    <PackageLicenseUrl>https://github.com/joelweiss/Splat.Serilog/blob/master/License.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/joelweiss/Splat.Serilog</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/joelweiss/Splat.Serilog</RepositoryUrl>
+    <PackageTags>serilog logging splat</PackageTags>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <DebugType>embedded</DebugType>
+    <PackageIconUrl>http://serilog.net/images/serilog-community-nuget.png</PackageIconUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
