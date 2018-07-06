@@ -1,23 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Splat.Serilog
+﻿namespace Splat.Serilog
 {
+    /// <summary>
+    /// Serilog adapter for Splat
+    /// </summary>
+    /// <seealso cref="Splat.ILogger" />
     public class SerilogLogger : Splat.ILogger
     {
         private readonly global::Serilog.ILogger _Logger;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SerilogLogger"/> class.
+        /// </summary>
+        /// <param name="logger">The Serilog logger.</param>
         public SerilogLogger(global::Serilog.ILogger logger)
         {
             _Logger = logger;
         }
 
-        public Splat.LogLevel Level { get; set; }
+        Splat.LogLevel Splat.ILogger.Level { get; set; }
 
-        public void Write(string message, Splat.LogLevel logLevel)
+        void Splat.ILogger.Write(string message, Splat.LogLevel logLevel)
         {
             switch (logLevel)
             {
