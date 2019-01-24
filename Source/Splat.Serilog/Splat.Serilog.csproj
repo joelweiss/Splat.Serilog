@@ -4,7 +4,7 @@
     <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
     <AssemblyName>Splat.Serilog</AssemblyName>
     <RootNamespace>Splat.Serilog</RootNamespace>
-    <Version>2.0.0</Version>
+    <Version>3.0.0</Version>
     <Authors>Joel Weiss</Authors>
     <Company />
     <Product>Change Tracking</Product>
@@ -22,7 +22,7 @@
 
   <ItemGroup>
     <PackageReference Include="serilog" Version="2.7.1" />
-    <PackageReference Include="splat" Version="4.0.0" />
+    <PackageReference Include="splat" Version="6.1.1" />
   </ItemGroup>
 
   <ItemGroup>
